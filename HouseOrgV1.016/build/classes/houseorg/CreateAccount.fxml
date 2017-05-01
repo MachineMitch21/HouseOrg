@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="createAccountGrid" minHeight="300" minWidth="500" prefHeight="300" prefWidth="500" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.CreateAccountController" alignment="center" hgap="10" vgap="10">
+     <stylesheets>
+        <URL value="@createaccount.css"/>
+    </stylesheets>
+    <children>
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="6"  text="CREATE ACCOUNT" id="Heading" fx:id="Heading"/>
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="2"  GridPane.rowIndex="3" id="usernameLabel" fx:id="usernameLabel" text="Username:" minWidth="60" />
+                    <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" minWidth="200" fx:id="usernameText" id="usernameText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="2"  GridPane.rowIndex="5" minWidth="60" text="Password:" id="passLabel" fx:id="passLabel"/>
+                    <PasswordField GridPane.columnIndex="2" GridPane.rowIndex="5" minWidth="200" fx:id="passText" id="passText"/> 
+                    <Label GridPane.columnIndex="1"  GridPane.rowIndex="7" minWidth="60" text="Verify Password:" id="passVerifyLabel" fx:id="passVerifyLabel"/>
+                    <PasswordField GridPane.columnIndex="2" GridPane.rowIndex="7" minWidth="200" fx:id="verPassText" id="verPassText"/> 
+                    <Label GridPane.columnIndex="2"  GridPane.rowIndex="8" minWidth="100" fx:id="msgLabel" id="msgLabel"/>
+                <Button minWidth="75" text="SUBMIT" GridPane.columnIndex="3" GridPane.rowIndex="8" onAction="#SubmitCreation"/> 
+                
+    </children>
+</GridPane>

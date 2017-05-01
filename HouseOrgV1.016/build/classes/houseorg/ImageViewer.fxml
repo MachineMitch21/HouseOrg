@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane id="imageBorder" prefHeight="500.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.ImageViewerController">
+ 
+        <top>
+            <MenuBar>
+                <Menu text="My Houses" fx:id="housesMenu">
+                    
+                </Menu>
+                <Menu text="Main Image">
+                    <MenuItem text="Change Image" fx:id="changeImg" onAction="#changeImage"></MenuItem>
+                    <MenuItem text="Change Style" fx:id="changeStyle" onAction="#changeStyle"></MenuItem>
+                </Menu>
+            </MenuBar>
+        </top>
+        <left>
+            <FlowPane fx:id="imagesHolder">
+                
+            </FlowPane>
+        </left>
+        <center>
+            <BorderPane>
+                <top>
+                    
+                </top>
+                <left>
+                    <GridPane vgap="10" hgap="10" alignment="CENTER" fx:id="leftGrid">
+                        <ImageView fx:id="leftArrow">
+                            
+                        </ImageView>
+                    </GridPane>
+                </left>
+                <center>
+                <GridPane hgap="20" vgap="20" alignment="CENTER" fx:id="centerGrid">
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="imageLabel" text="View your images"/>
+                    <ImageView GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="mainImageHolder">
+
+                    </ImageView>
+                </GridPane>
+                </center>
+                <right>
+                    <GridPane vgap="10" hgap="10" alignment="CENTER" fx:id="rightGrid">
+                        <ImageView fx:id="rightArrow">
+                            
+                        </ImageView>
+                    </GridPane>
+                </right>
+                <bottom>
+                    
+                </bottom>
+            </BorderPane>
+            
+        </center>
+        <bottom>
+            
+        </bottom>
+        
+</BorderPane>

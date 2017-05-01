@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+    
+    
+        <BorderPane fx:id="removeHouseGrid" minHeight="150" minWidth="200" prefHeight="300" prefWidth="500" styleClass="main" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.RemoveRecordController">
+            <stylesheets>
+                <URL value="@AddRemoveModifyStyle.css"/>
+            </stylesheets>
+             
+            <top>
+                <MenuBar>
+                    <Menu text="Delete By..">
+                        <MenuItem text="Date" onAction="#removeByDate"></MenuItem>
+                        
+                        <MenuItem text="Tenant" onAction="#removeByTenant"></MenuItem>
+                    </Menu>
+                </MenuBar>
+            </top>
+            <center>
+                <GridPane alignment ="center" vgap="10" hgap="10">
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="6" text="Remove By Date" id="heading" fx:id="heading"/>
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"  GridPane.rowIndex="7" id="removeLabel" fx:id="removeLabel" text="Date: " minWidth="60" />
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="7" minWidth="200" fx:id="removeText" id="removeText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"  GridPane.rowIndex="9" id="addressLabel" fx:id="addressLabel" text="Address: " minWidth="60" />
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="9" minWidth="200" fx:id="addressText" id="addressText"/> 
+                    <Label text="" GridPane.columnIndex="4" GridPane.rowIndex="13" fx:id="msgLabel"/> 
+                    <Button minWidth="250" text="Delete all records related to Date" GridPane.columnIndex="1" GridPane.rowIndex="13" onAction="#SubmitRemove" fx:id="deleteAllBtn"/>
+                </GridPane>
+            </center>
+          
+        </BorderPane>
+    
+

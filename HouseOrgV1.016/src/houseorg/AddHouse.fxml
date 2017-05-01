@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="addHouseGrid" minHeight="500" minWidth="600" prefHeight="300" prefWidth="500" styleClass="main" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.AddHouseController" alignment="center" hgap="10" vgap="10">
+    <stylesheets>
+        <URL value="@AddRemoveModifyStyle.css"/>
+    </stylesheets>
+        <children>
+                    <Label GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.columnSpan="6"  text="Add House" id="Heading" fx:id="Heading"/>
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="1"  GridPane.rowIndex="3" id="addressLabel" fx:id="addressLabel" text="Address: " minWidth="60" />
+                    <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" minWidth="200" fx:id="addressText" id="addressText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="1"  GridPane.rowIndex="5" minWidth="60" text="Images chosen: " id="tenantLabel" fx:id="tenantLabel"/>
+                    <TextArea GridPane.columnIndex="2" GridPane.rowIndex="5" minWidth="200" fx:id="imageText" id="imageText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="7" minWidth="60" GridPane.columnSpan="1" text="Set Main image: "/>
+                    <TextField GridPane.columnIndex="2" GridPane.rowIndex="7" fx:id="mainImgSelection"/>
+                    <Button minWidth="200" GridPane.columnIndex="1" GridPane.rowIndex="10" text="Browse file system" onAction="#browseFiles" fx:id="browseBtn"/>
+                    <Button minWidth="200" text="ADD TO DATABASE" GridPane.columnIndex="2" GridPane.rowIndex="10" onAction="#SubmitAdd"/> 
+                    <Label minWidth="200" GridPane.columnIndex="1" GridPane.rowIndex="12" fx:id="msgLabel"/>
+                
+        </children>
+</GridPane>

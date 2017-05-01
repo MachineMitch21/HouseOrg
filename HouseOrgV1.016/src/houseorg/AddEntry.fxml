@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane fx:id="addHouseGrid" minHeight="500" minWidth="600" prefHeight="300" prefWidth="500" styleClass="main" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.AddEntryController" alignment="center" hgap="10" vgap="10">
+    <stylesheets>
+        <URL value="@AddRemoveModifyStyle.css"/>
+    </stylesheets>
+        <children>
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="6"  text="Add Entry" id="Heading" fx:id="Heading"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"  GridPane.rowIndex="3" id="addressLabel" fx:id="addressLabel" text="Address: " minWidth="60" />
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="3" minWidth="200" fx:id="addressText" id="addressText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"  GridPane.rowIndex="5" id="dateLabel" fx:id="dateLabel" text="Today's Date: " minWidth="60" />
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="5" minWidth="200" fx:id="dateText" id="dateText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"  GridPane.rowIndex="7" minWidth="60" text="Tenant's Name (null if vacant): " id="tenantLabel" fx:id="tenantLabel"/>
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="7" minWidth="200" fx:id="tenantText" id="tenantText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"   GridPane.rowIndex="9" minWidth="60" text="Rent: " id="rentLabel" fx:id="rentLabel"/>
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="9" minWidth="200" fx:id="rentText" id="rentText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"  GridPane.rowIndex="11" minWidth="60" text="Rent Paid: " id="rentPaidLabel" fx:id="rentPaidLabel"/>
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="11" minWidth="200" fx:id="rentPaidText" id="rentPaidText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"   GridPane.rowIndex="13" minWidth="60" text="Upkeep costs this month: " id="costPerMonth" fx:id="costPerMonth"/>
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="13" minWidth="200" fx:id="costPerMonthText" id="costPerMonthText"/>
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="15" fx:id="reportLabel" text="Description of expense: "/>
+                    <TextArea GridPane.columnIndex="4" GridPane.rowIndex="15" fx:id="reportText" />    
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="21" fx:id="msgLabel"/> 
+                <Button minWidth="200" text="SUBMIT" GridPane.columnIndex="4" GridPane.rowIndex="21" onAction="#SubmitAdd"/> 
+                
+        </children>
+</GridPane>

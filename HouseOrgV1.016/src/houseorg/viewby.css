@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.main{
+    -fx-background-color: lightskyblue;
+}
+
+#Heading{
+    -fx-font-size: 38;
+}

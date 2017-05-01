@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="helpGrid" prefHeight="1080" prefWidth="800" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.HelpPageController" alignment="center" vgap="10" hgap="10">
+    <TextArea id="helpInfo" fx:id="helpInfo"></TextArea>
+</GridPane>

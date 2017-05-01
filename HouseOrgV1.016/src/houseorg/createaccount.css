@@ -1,0 +1,35 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#createAccountGrid{
+    
+    -fx-border: 20px solid black;
+}
+
+#CreateAccountGrid Button{
+    -fx-font-size: 14;
+    -fx-font-family: "sans-serif";
+}
+
+#Heading{
+   -fx-font-size: 32px;
+   -fx-font-family: "sans-serif";
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#subHeading{
+    -fx-font-size: 19;
+    -fx-font-family: "sans-serif"
+}
+
+#usernameLabel, #passLabel, #passVerifyLabel{
+    -fx-font-size: 16;
+    -fx-font-family: "sans-serif";
+}
+
+#msgLabel{
+    -fx-font-size: 18;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: red;
+}

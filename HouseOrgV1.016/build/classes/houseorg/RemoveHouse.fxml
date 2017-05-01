@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="removeHouseGrid" minHeight="150" minWidth="200" prefHeight="300" prefWidth="500" styleClass="main" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.RemoveHouseController" alignment="center" hgap="10" vgap="10">
+    <stylesheets>
+        <URL value="@AddRemoveModifyStyle.css"/>
+    </stylesheets>
+    <children>
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="6" text="Remove House" id="Heading" fx:id="Heading"/>
+                    <Label GridPane.columnIndex="1" GridPane.columnSpan="3"  GridPane.rowIndex="7" id="addressLabel" fx:id="addressLabel" text="Address: " minWidth="60" />
+                    <TextField GridPane.columnIndex="4" GridPane.rowIndex="7" minWidth="200" fx:id="addressText" id="addressText"/> 
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="9" fx:id="msgLabel"/>
+                <Button minWidth="200" text="REMOVE FROM DATABASE" GridPane.columnIndex="4" GridPane.rowIndex="13" onAction="#SubmitRemove"/> 
+                
+    </children>
+</GridPane>

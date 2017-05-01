@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import houseorg.*?>
+
+<AnchorPane id="MainAnchor"  styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.MainApplicationWindowController">
+    <stylesheets>
+        <URL value="@mainapplicationwindow.css"/>
+    </stylesheets>
+    <BorderPane>
+        <top>
+            <MenuBar GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="menuBar">
+                
+                <Menu text="Help">
+                    <MenuItem text="help" onAction="#getHelp"></MenuItem>
+                </Menu>
+                <Menu text="Modifications">
+                    <Menu text="ADD">
+                        <MenuItem fx:id="houseAdd" text="Add new House" onAction="#addHouse"></MenuItem>
+                        <MenuItem fx:id="entryAdd" text="Add Entry to existing table" onAction="#editExisting"></MenuItem>
+                    </Menu>
+                        <Menu fx:id="removeMenu" text="REMOVE">
+                            <MenuItem fx:id="houseRemove" text="House" onAction="#removeHouse"></MenuItem>
+                            <MenuItem fx:id="recordRemove" text="Group of records" onAction="#removeRecord"></MenuItem>
+                            
+                        </Menu>
+                    <Menu text="View By..">
+                        <MenuItem fx:id="viewAll" text="All" onAction="#allSelection" ></MenuItem>
+                        <MenuItem fx:id="viewDate" text="Date" onAction="#dateSelection"></MenuItem>
+                        <MenuItem fx:id="viewTenant" text="Tenant" onAction="#tenantSelection"></MenuItem>
+                        <MenuItem fx:id="viewCosts" text="UpkeepCosts" onAction="#upkeepSelection"></MenuItem>
+                    </Menu>
+                </Menu>
+
+                <Menu text="Account">
+                    <MenuItem fx:id="signOut" text="Sign Out" onAction="#userSignOut"></MenuItem>
+                    <MenuItem fx:id="deleteAccount" text="Delete My Account" onAction="#deleteAccount"></MenuItem>
+                </Menu>
+            </MenuBar>
+        </top>
+        
+            <left>
+                <TreeView fx:id="addresses" minWidth="150" onMouseClicked="#houseManip">
+                    <TreeItem fx:id="addPar"></TreeItem>
+                </TreeView>
+            </left>
+        <center>
+            
+            <GridPane alignment="center" fx:id="centerGrid">
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="5" fx:id="tableLabel" minHeight="60"/>
+            <TableView fx:id="houseTable" prefWidth="800" GridPane.columnIndex="0" GridPane.rowIndex="1" onMouseClicked="#displayContextMenu" >
+                
+                <columns>
+                    <TableColumn fx:id="idColumn" text="RecordID" prefWidth="100">
+                        <cellValueFactory><PropertyValueFactory property="entryID"/></cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="dateColumn" text="DATE" prefWidth="150">
+                        <cellValueFactory><PropertyValueFactory property="date"/></cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="tenantColumn" text="TENANT" prefWidth="150">
+                        <cellValueFactory><PropertyValueFactory property="tenant"/></cellValueFactory>
+                    </TableColumn>  
+                    <TableColumn fx:id="rentAmountColumn" text="RENT" prefWidth="100">
+                        <cellValueFactory><PropertyValueFactory property="rent"/></cellValueFactory>
+                    </TableColumn> 
+                    <TableColumn fx:id="rentUpToDateColumn" text="RENT PAID" prefWidth="100">
+                        <cellValueFactory><PropertyValueFactory property="rentPaid"/></cellValueFactory>
+                    </TableColumn> 
+                    <TableColumn fx:id="upKeepColumn" text="UPKEEP COST" prefWidth="150" >
+                        <cellValueFactory><PropertyValueFactory property="costPerMonth"/></cellValueFactory>
+                    </TableColumn>
+                </columns>
+                <items>
+                    <FXCollections fx:id="entries" fx:factory="observableArrayList">
+                            
+                    </FXCollections>
+                </items>
+            </TableView>
+            </GridPane>
+        </center>
+    </BorderPane>
+</AnchorPane>

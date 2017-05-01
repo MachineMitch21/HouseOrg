@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+    
+
+<GridPane  xmlns:fx="http://javafx.com/fxml/1" fx:id="signInPageGrid"  prefHeight="300" prefWidth="350" fx:controller="houseorg.FXMLDocumentController" alignment="center" hgap="10" vgap="10">
+    <stylesheets>
+        <URL value="@MainStyle.css"/>
+    </stylesheets>
+    <children>
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="6"  text="Welcome to HOUSE_ORG!" id="Heading" fx:id="Heading"/>
+                    <Label GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="6"   text="Please sign in or create an account" id="subHeading" fx:id="subHeading"/> 
+                    <Label GridPane.columnIndex="1"  GridPane.rowIndex="3" minWidth="60" text="Username:" id="usernameLabel" fx:id="usernameLabel"/>
+                    <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" minWidth="200" fx:id="usernameText" id="usernameText"/> 
+                    <Label GridPane.columnIndex="1"  GridPane.rowIndex="5" minWidth="60" text="Password:" id="passLabel" fx:id="passLabel"/>
+                    <PasswordField GridPane.columnIndex="2" GridPane.rowIndex="5" minWidth="200" fx:id="passText" id="passText"/> 
+                <Button minWidth="100" text="SUBMIT" GridPane.columnIndex="2" GridPane.rowIndex="7" onAction="#SubmitSignIn"/> 
+                <Button minWidth="200" GridPane.columnIndex="1" GridPane.rowIndex="7" text="Create An Account" onAction="#onCreateAcc" />
+                <Label minWidth="250" GridPane.columnIndex="2" GridPane.rowIndex="8" fx:id="msgLabel" id="msgLabel"/>  
+    </children>
+</GridPane>

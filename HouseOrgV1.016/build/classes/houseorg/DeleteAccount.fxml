@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane styleClass="main" id="deleteGrid" prefHeight="400.0" prefWidth="500" xmlns:fx="http://javafx.com/fxml/1" fx:controller="houseorg.DeleteAccountController" alignment="center" hgap="10" vgap="10">
+    <stylesheets>
+        <URL value="@AddRemoveModifyStyle.css"/>
+    </stylesheets>
+    <Label GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="Heading" id="Heading" text="Delete Account"/>
+    <Label GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="usernameLabel" id="usernameLabel" text="Username: "/>
+    <TextField GridPane.columnIndex="4" GridPane.rowIndex="3" fx:id="usernameText" id="usernameText"/>
+    <Label GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="passwordLabel" id="passwordLabel" text="Password: "/>
+    <TextField GridPane.columnIndex="4" GridPane.rowIndex="5" fx:id="passwordText" id="passwordText"/>
+    <Label GridPane.columnIndex="1" GridPane.rowIndex="7" fx:id="msgLabel" id="msgLabel"/>
+    <Button GridPane.columnIndex="4" GridPane.rowIndex="9" fx:id="submitBtn" id="submitBtn" text="Delete My Account" onAction="#deleteAccount"/>
+    <Button GridPane.columnIndex="1" GridPane.rowIndex="9" fx:id="cancelBtn" id="cancelBtn" text="Cancel" onAction="#cancelAction"/>
+</GridPane>

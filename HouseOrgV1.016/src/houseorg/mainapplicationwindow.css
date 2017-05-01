@@ -1,0 +1,22 @@
+
+
+.mainFxmlClass {
+    
+}
+
+AnchorPane{
+    -fx-background-color: grey;
+}
+
+FlowPane{
+    
+}
+
+#tableLabel{
+    -fx-font-size: 20px;
+}
+
+#MiddleSection{
+    -fx-border: 25px solid black;
+   
+}

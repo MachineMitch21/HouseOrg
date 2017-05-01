@@ -1,0 +1,49 @@
+Please take the time to read over this document.
+    
+    All changes made to your tables are final.  Please ensure that you want to go through with an action before making any changes.
+    There are four menu buttons at your disposal: Help, Modifications, Retrieve and Account.
+
+    Anything with a * next to it shows its results immediately.  Every other action will need to be refreshed.  Use Retrieve when 
+    adding and removing a house.  When adding and removing records (entries), you will need to click on the modified address to
+    view changes made to that house table.
+
+    The following is a description of each of the menu buttons and the items within their drop down menus:
+
+    1. HELP
+        Help is a link to this document for future reference.
+
+    2. Modifications
+        A. Add
+            a. Add House brings you to a window in which you will specify the address of the house you want to add.
+            b. Add record brings you to a window in which you will specify which house (by address) you want to add a record to,
+                then you can fill out the form and submit.  This will insert your new record into the house table that was specified
+                by address. 
+
+        B. Remove
+            a. House brings you to a window in which you will specify the house you want to remove.  This will remove everything related 
+               to that house.
+            b. Record brings you to a window in which you can remove a group of records from a specified address either by the date of the records
+                or by the tenant.  This makes quick deleting of old records related to outdated data.
+*           c. The third option will delete the current house that you have selected.    
+
+        C. ViewBy..
+            a. All will show you all the records for each table.
+            b. Date allows you to view records that you added on a specific date.
+            c. Tenant allows you to view records that you added involving a specific tenant.
+            d. UpKeepCosts allows you to view records within a specified range.  The "From: " textbox specifies the low end of the 
+                range and the "To: " textbox specifies the high end of the range.
+    
+    3. Retrieve
+        A. Retrieve my address list will refresh you address list after a house has been added or removed.  Changes in the database are 
+            not automatically shown through some actions.
+    
+    4. Account
+        A. Sign out will sign you out of your current session and bring you to the sign in page.
+        B. Delete my account will delete your account including all tables and records related to your account
+
+* Note: When right clicking on a specific row in a table, you will be prompted with a button for deleting the selected record.  This has been added for 
+        quick removal of single records.  You will also have access to the description you gave for the expense included in that specific record.  This will display
+        a small textfield displaying your report.
+
+
+Thank you for choosing HOUSE_ORG.

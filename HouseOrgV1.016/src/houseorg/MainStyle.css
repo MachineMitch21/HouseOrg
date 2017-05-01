@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 4, 2016, 3:53:34 PM
+    Author     : Mitch
+*/
+
+#signInPageGrid{
+    
+    -fx-border: 20px solid black;
+}
+
+#signInPageGrid Button{
+    -fx-font-size: 14;
+    -fx-font-family: "sans-serif";
+}
+
+#Heading{
+   -fx-font-size: 32px;
+   -fx-text-alignment: center;
+   -fx-font-family: "sans-serif";
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#subHeading{
+    -fx-font-size: 19;
+    -fx-font-family: "sans-serif"
+}
+
+#usernameLabel, #passLabel{
+    -fx-font-size: 16;
+    -fx-font-family: "sans-serif";
+}
+
+#msgLabel{
+    -fx-text-fill: red;
+    -fx-font-size: 18;
+}
